@@ -61,9 +61,9 @@ const TemperatureIntentHandler = {
 function httpGet() {
   return new Promise(((resolve, reject) => {
     var options = {
-        host: 'yourdomain.net',
-        port: 8002,
-        path: '/cm?cmnd=GlobalTemp',
+        host: 'yourdomain.net', // enter e.g. the dyndns domain aligible for your router
+        port: 8002, // talk to this open port on your router
+        path: '/cm?cmnd=GlobalTemp', // tasmota command returns json with temperature
         method: 'GET',
     };
      
